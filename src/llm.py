@@ -59,7 +59,7 @@ def get_medical_response(
     # but 'start_chat' manages history better if we were passing the object around. 
     # Here we are stateless per request for simplicity, re-injecting history manually or just relying on the query context.
     
-    model = genai.GenerativeModel('gemini-1.5-flash')
+    model = genai.GenerativeModel('gemini-2.0-flash-lite')
     
     # Construct the full prompt including history if provided (simplified for this prototype)
     messages = [
